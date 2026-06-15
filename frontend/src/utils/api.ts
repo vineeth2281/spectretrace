@@ -1,4 +1,6 @@
-const API_BASE = "const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000/api";";
+const API_BASE = typeof window !== "undefined" && (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1")
+  ? "http://127.0.0.1:8000/api"
+  : "https://spectretrace.onrender.com/api";
 
 export interface MatchSummary {
   match_id: string;
