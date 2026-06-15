@@ -1,4 +1,4 @@
-const API_BASE = "https://spectretrace.onrender.com";
+const API_BASE = "const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:8000/api";";
 
 export interface MatchSummary {
   match_id: string;
