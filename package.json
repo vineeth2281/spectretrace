@@ -1,0 +1,12 @@
+{
+  "name": "lila-journey-root",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"python backend/run.py\" \"npm --prefix frontend run dev\"",
+    "install-all": "npm install && npm --prefix frontend install && pip install -r backend/requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

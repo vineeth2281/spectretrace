@@ -1,0 +1,9 @@
+# Ignore raw player telemetry data files
+player_data/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+env/
